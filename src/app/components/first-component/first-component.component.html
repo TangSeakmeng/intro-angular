@@ -1,0 +1,11 @@
+<h1>Hello world</h1>
+<!-- <h4>Number: {{ number }}</h4> -->
+<app-second-component [number]="number"></app-second-component>
+
+<!-- <button (click)="btnDecrementClicked()">Decrement</button>
+<button (click)="btnResetClicked()">Reset</button>
+<button (click)="btnIncrementClicked()">Increment</button> -->
+<app-third-component (onBtnDecrementClicked)="btnDecrementClicked0($event)" (onBtnIncrementClicked)="btnIncrementClicked()" (onBtnResetClicked)="btnResetClicked()"></app-third-component>
+
+<!-- <input [value]="number">
+<input value="{{number}}"> -->
