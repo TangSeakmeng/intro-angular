@@ -4,7 +4,7 @@ import { FirstComponentComponent } from '../components/first-component/first-com
 import { SecondComponentComponent } from '../components/second-component/second-component.component';
 import { ThirdComponentComponent } from '../components/third-component/third-component.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,11 +15,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
 
     ThirdComponentComponent,
     FirstComponentComponent,

@@ -17,6 +17,12 @@ const routes: Routes = [
       module => module.FirstModuleModule
     )
   },
+  {
+    path: 'fourthm',
+    loadChildren: () => import(`./modules/fourth-module/fourth-module.module`).then(
+      module => module.FourthModuleModule
+    )
+  },
   { path: '**', component: NotFoundPageComponent }
 ];
 

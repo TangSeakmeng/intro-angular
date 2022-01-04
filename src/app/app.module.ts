@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { SharedModule } from './modules/shared.module';
+import { MobxAngularModule } from 'mobx-angular';
+import { AppStore } from './stores/app.store';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { SharedModule } from './modules/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MobxAngularModule,
   ],
-  providers: [],
+  providers: [AppStore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

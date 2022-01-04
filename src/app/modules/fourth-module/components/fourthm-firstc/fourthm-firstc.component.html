@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>UserId</th>
+      <th>Id</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of apiResultStore.result;">
+      <td>{{ item.userId }}</td>
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
+    </tr>
+  </tbody>
+</table>
